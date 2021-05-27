@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="header">
+            <div class="title">
+                <h1>My Library</h1>
+            </div>
+            <div class="newbook">
+                <button id='new'>
+                    ADD NEW BOOK
+                </button>
+            </div>
+        </div>
+
+        <div id="book-cards">
+
+        </div>
+
+    </div>
+
+    <div id="modal-bg">
+        <div class="modal">
+            <div class="close"> 
+               <a id='closeBtn'>+</a>
+            </div>
+            <div id='form'>  
+                <form onsubmit="return false">
+                    <label for="title">Title:</label><br>
+                    <input type="text" id="title" name="title" required><br>
+                    <label for="author">Author:</label><br>
+                    <input type="text" id="author" name="author" required><br>
+                    <label for="pages">Number of Pages:</label><br>
+                    <input type="number" id="pages" name="pages" min="0" max="99999" required><br>
+                    <label for="date">Date:</label><br>
+                    <input type="date" id="date" name="date" required><br>
+                    <label for="read">Already Read?</label><br>
+                    <input type="checkbox" id="read" name="read"><br>
+                    <input type="submit" id="submitButton" value="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
